@@ -550,20 +550,8 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
-.flex {
-  display: flex;
-}
-
 .table {
   display: table;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 @-webkit-keyframes spin {
@@ -632,13 +620,9 @@ video {
   }
 }
 
-.items-center {
-  align-items: center;
-}
-
-.bg-red-200 {
+.bg-s-black {
   --tw-bg-opacity: 1;
-  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  background-color: rgba(42, 44, 56, var(--tw-bg-opacity));
 }
 
 *, ::before, ::after {

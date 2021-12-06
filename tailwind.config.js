@@ -1,3 +1,7 @@
+const Colors = {
+  "s-black": "#2A2C38",
+};
+
 module.exports = {
   purge: {
     enabled: true,
@@ -5,6 +9,10 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+      ...Colors,
+    }),
     extend: {},
   },
   variants: {
