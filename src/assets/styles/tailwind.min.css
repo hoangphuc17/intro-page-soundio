@@ -1,4 +1,6 @@
-/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -12,7 +14,7 @@ Use a better box model (opinionated).
 *,
 ::before,
 ::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -20,9 +22,9 @@ Use a more readable tab size (opinionated).
 */
 
 html {
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	   tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
 }
 
 /**
@@ -31,8 +33,10 @@ html {
 */
 
 html {
-	line-height: 1.15; /* 1 */
-	-webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /*
@@ -45,7 +49,7 @@ Remove the margin in all browsers.
 */
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 /**
@@ -53,7 +57,7 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-	font-family:
+  font-family:
 		system-ui,
 		-apple-system, /* Firefox supports this but not yet `system-ui` */
 		'Segoe UI',
@@ -76,8 +80,10 @@ Grouping content
 */
 
 hr {
-	height: 0; /* 1 */
-	color: inherit; /* 2 */
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
 }
 
 /*
@@ -90,8 +96,8 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr[title] {
-	-webkit-text-decoration: underline dotted;
-	        text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -100,7 +106,7 @@ Add the correct font weight in Edge and Safari.
 
 b,
 strong {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 /**
@@ -112,14 +118,16 @@ code,
 kbd,
 samp,
 pre {
-	font-family:
+  font-family:
 		ui-monospace,
 		SFMono-Regular,
 		Consolas,
 		'Liberation Mono',
 		Menlo,
-		monospace; /* 1 */
-	font-size: 1em; /* 2 */
+		monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -127,7 +135,7 @@ Add the correct font size in all browsers.
 */
 
 small {
-	font-size: 80%;
+  font-size: 80%;
 }
 
 /**
@@ -136,18 +144,18 @@ Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
 
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sub {
-	bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 sup {
-	top: -0.5em;
+  top: -0.5em;
 }
 
 /*
@@ -161,8 +169,10 @@ Tabular data
 */
 
 table {
-	text-indent: 0; /* 1 */
-	border-color: inherit; /* 2 */
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
 }
 
 /*
@@ -180,10 +190,14 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: inherit; /* 1 */
-	font-size: 100%; /* 1 */
-	line-height: 1.15; /* 1 */
-	margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -192,8 +206,9 @@ Remove the inheritance of text transform in Edge and Firefox.
 */
 
 button,
-select { /* 1 */
-	text-transform: none;
+select {
+  /* 1 */
+  text-transform: none;
 }
 
 /**
@@ -204,7 +219,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-	-webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 /**
@@ -212,8 +227,8 @@ Remove the inner border and padding in Firefox.
 */
 
 ::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
+  border-style: none;
+  padding: 0;
 }
 
 /**
@@ -221,7 +236,7 @@ Restore the focus styles unset by the previous rule.
 */
 
 :-moz-focusring {
-	outline: 1px dotted ButtonText;
+  outline: 1px dotted ButtonText;
 }
 
 /**
@@ -230,7 +245,7 @@ See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d4
 */
 
 :-moz-ui-invalid {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 /**
@@ -238,7 +253,7 @@ Remove the padding so developers are not caught out when they zero out 'fieldset
 */
 
 legend {
-	padding: 0;
+  padding: 0;
 }
 
 /**
@@ -246,7 +261,7 @@ Add the correct vertical alignment in Chrome and Firefox.
 */
 
 progress {
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 /**
@@ -255,7 +270,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
-	height: auto;
+  height: auto;
 }
 
 /**
@@ -264,8 +279,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-	-webkit-appearance: textfield; /* 1 */
-	outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -273,7 +290,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-search-decoration {
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /**
@@ -282,8 +299,10 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-	-webkit-appearance: button; /* 1 */
-	font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /*
@@ -296,8 +315,10 @@ Add the correct display in Chrome and Safari.
 */
 
 summary {
-	display: list-item;
-}/**
+  display: list-item;
+}
+
+/**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
  * suitable for web applications.
@@ -352,10 +373,11 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
-  line-height: 1.5; /* 2 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
 }
-
 
 /**
  * Inherit font-family and line-height from `html` so users can set them as
@@ -396,10 +418,14 @@ body {
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: currentColor;
+  /* 2 */
 }
 
 /*
@@ -456,9 +482,9 @@ button,
  * as it triggers the better focus styles even for links, which still use a dotted
  * outline in Firefox by default.
  */
- 
+
 :-moz-focusring {
-	outline: auto;
+  outline: auto;
 }
 
 table {
@@ -542,8 +568,10 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
-  vertical-align: middle; /* 2 */
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
 }
 
 /**
@@ -566,120 +594,218 @@ video {
 [hidden] {
   display: none;
 }
+
+*, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .fixed {
-	position: fixed;
+  position: fixed;
 }
+
 .absolute {
-	position: absolute;
+  position: absolute;
 }
+
 .relative {
-	position: relative;
+  position: relative;
 }
+
 .top-6 {
-	top: 1.5rem;
+  top: 1.5rem;
 }
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .z-10 {
-	z-index: 10;
+  z-index: 10;
 }
+
+.z-\[1\] {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
 .mx-auto {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .mt-6 {
-	margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
+
 .ml-auto {
-	margin-left: auto;
+  margin-left: auto;
 }
+
 .mt-28 {
-	margin-top: 7rem;
+  margin-top: 7rem;
 }
+
 .mt-16 {
-	margin-top: 4rem;
+  margin-top: 4rem;
 }
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .block {
-	display: block;
+  display: block;
 }
+
 .flex {
-	display: flex;
+  display: flex;
 }
+
 .hidden {
-	display: none;
+  display: none;
 }
+
 .w-full {
-	width: 100%;
+  width: 100%;
 }
+
 .w-5 {
-	width: 1.25rem;
+  width: 1.25rem;
 }
+
 .w-\[330px\] {
-	width: 330px;
+  width: 330px;
 }
+
+.w-\[272px\] {
+  width: 272px;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: var(--tw-transform);
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: var(--tw-transform);
+}
+
+.transform {
+  transform: var(--tw-transform);
+}
+
 .items-start {
-	align-items: flex-start;
+  align-items: flex-start;
 }
+
 .justify-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
+
 .bg-s-black {
-	--tw-bg-opacity: 1;
-	background-color: rgba(42, 44, 56, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(42, 44, 56, var(--tw-bg-opacity));
 }
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .text-right {
-	text-align: right;
+  text-align: right;
 }
+
 .font-primary-medium {
-	font-family: Inter-Medium, sans-serif;
+  font-family: Inter-Medium, sans-serif;
 }
+
 .text-xs {
-	font-size: 0.75rem;
-	line-height: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
+
 .text-h1 {
-	font-size: 80px;
-	line-height: 88px;
-	letter-spacing: -0.03em;
+  font-size: 80px;
+  line-height: 88px;
+  letter-spacing: -0.03em;
 }
+
 .text-caption1 {
-	font-size: 20px;
-	line-height: 32px;
-	letter-spacing: -0.02em;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
 }
+
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
+
 .text-white {
-	--tw-text-opacity: 1;
-	color: rgba(255, 255, 255, var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+
 .text-s-gray {
-	--tw-text-opacity: 1;
-	color: rgba(135, 146, 157, var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(135, 146, 157, var(--tw-text-opacity));
 }
+
 .hover\:text-primary:hover {
-	--tw-text-opacity: 1;
-	color: rgba(0, 122, 240, var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(0, 122, 240, var(--tw-text-opacity));
 }
+
 @media (min-width: 1024px) {
+  .lg\:top-16 {
+    top: 4rem;
+  }
 
-	.lg\:top-16 {
-		top: 4rem;
-	}
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
 
-	.lg\:mt-24 {
-		margin-top: 6rem;
-	}
+  .lg\:block {
+    display: block;
+  }
 
-	.lg\:block {
-		display: block;
-	}
+  .lg\:h-\[770px\] {
+    height: 770px;
+  }
 
-	.lg\:w-\[640px\] {
-		width: 640px;
-	}
+  .lg\:w-\[640px\] {
+    width: 640px;
+  }
 
-	.lg\:px-20 {
-		padding-left: 5rem;
-		padding-right: 5rem;
-	}
+  .lg\:w-\[524px\] {
+    width: 524px;
+  }
+
+  .lg\:w-\[770px\] {
+    width: 770px;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }

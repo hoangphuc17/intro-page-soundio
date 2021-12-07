@@ -1,4 +1,4 @@
-@import url(./tailwind.min.css);
+$black: #2a2c38;
 
 @font-face {
   font-family: "Inter-Medium";
@@ -35,5 +35,48 @@
       width: 102px;
       height: 30px;
     }
+  }
+}
+@keyframes waves {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.waves {
+  position: absolute;
+  background-color: $black;
+  border-radius: 999px;
+
+  span {
+    position: absolute;
+
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    background: linear-gradient(180deg, #007af0 0%, #00f0b6 100%);
+    content: "";
+    z-index: -1;
+    border-radius: 999px;
+  }
+  span:nth-child(1) {
+    transform: scale(1);
+  }
+  span:nth-child(2) {
+    transform: scale(1.02);
+  }
+  span:nth-child(3) {
+    transform: scale(1.04);
+  }
+  span:nth-child(4) {
+    transform: scale(1.06);
   }
 }

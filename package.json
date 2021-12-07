@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-tailwind": "postcss src/assets/styles/tailwind.css -o src/assets/styles/tailwind.min.css",
-    "build-css-dev": "npm run build-tailwind && sass --watch src/assets/styles/styles.scss src/assets/styles/styles.min.css --style=compressed",
-    "build-css": "npm run build-tailwind && sass src/assets/styles/styles.scss src/assets/styles/styles.min.css --style=compressed",
+    "build-tailwind-dev": "npx tailwindcss -i ./src/assets/styles/tailwind.css -o ./src/assets/styles/tailwind.min.css --watch",
+    "build-tailwind": "npx tailwindcss -i ./src/assets/styles/tailwind.css -o ./src/assets/styles/tailwind.min.css",
+    "build-style-dev": "sass --watch src/assets/styles/styles.scss src/assets/styles/styles.min.css --style=compressed",
+    "build-css": "npm run build-tailwind && sass src/assets/styles/styles.scss:src/assets/styles/styles.min.css src/assets/styles/tailwind.min.css:src/assets/styles/tailwind.min.css --style=compressed",
     "build": "set NODE_ENV=production&&npm run build-css",
     "dev": "live-server src --port=8080"
   },
