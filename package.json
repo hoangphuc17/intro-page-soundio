@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss src/assets/styles/styles.scss -o src/assets/styles/styles.min.css",
-    "dev": "npm run build && live-server src --port=8080"
+    "build-tailwind": "postcss src/assets/styles/tailwind.css -o src/assets/styles/tailwind.min.css",
+    "build-css-dev": "npm run build-tailwind && sass --watch src/assets/styles/styles.scss src/assets/styles/styles.min.css --style=compressed",
+    "build-css": "npm run build-tailwind && sass src/assets/styles/styles.scss src/assets/styles/styles.min.css --style=compressed",
+    "build": "set NODE_ENV=production&&npm run build-css",
+    "dev": "live-server src --port=8080"
   },
   "keywords": [],
   "author": "",
