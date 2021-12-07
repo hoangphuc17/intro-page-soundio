@@ -2,6 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const Colors = {
   "s-black": "#2A2C38",
   "s-gray": "#87929d",
+  "border-line": "#2b333b",
   primary: "#007af0",
   "neutral-tile-active": "#fcfcfc",
   "neutral-body": "#C8CCD0",
@@ -10,8 +11,7 @@ console.log(process.env.NODE_ENV);
 module.exports = {
   mode: "jit",
   purge: {
-    // enabled: process.env.NODE_ENV === "production",
-    enabled: false,
+    enabled: process.env.NODE_ENV === "production",
     content: ["src/*.html"],
   },
   darkMode: false, // or 'media' or 'class'
@@ -33,7 +33,7 @@ module.exports = {
         },
       ],
       caption1: [
-        "20px",
+        "24px",
         {
           lineHeight: "32px",
           letterSpacing: "-0.02em",
@@ -51,7 +51,7 @@ module.exports = {
       fontFamily: {
         "primary-medium": ["Inter-Medium", "sans-serif"],
         "primary-regular": ["Inter-Regular", "sans-serif"],
-        "primary-extralight": ["Inter-ExtraLight", "sans-serif"],
+        "primary-thin": ["Inter-Thin", "sans-serif"],
         "secondary-medium": ["Manrope-Medium", "sans-serif"],
         "secondary-regular": ["Manrope-Regular", "sans-serif"],
       },
@@ -66,6 +66,9 @@ module.exports = {
       },
       backgroundColor: {
         ...Colors,
+      },
+      gridTemplateColumns: {
+        "1fr-auto": "1fr auto",
       },
     },
   },

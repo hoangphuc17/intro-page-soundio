@@ -1,4 +1,7 @@
 $black: #2a2c38;
+$neutral-tile-active: #fcfcfc;
+$gray: #87929d;
+$border-line: #2b333b;
 
 @font-face {
   font-family: "Inter-Medium";
@@ -9,8 +12,8 @@ $black: #2a2c38;
   src: url("../fonts/Inter/Inter-Regular.ttf");
 }
 @font-face {
-  font-family: "Inter-ExtraLight";
-  src: url("../fonts/Inter/Inter-ExtraLight.ttf");
+  font-family: "Inter-Thin";
+  src: url("../fonts/Inter/Inter-Thin.ttf");
 }
 @font-face {
   font-family: "Manrope-Medium";
@@ -37,6 +40,7 @@ $black: #2a2c38;
     }
   }
 }
+
 @keyframes waves {
   0% {
     opacity: 1;
@@ -50,33 +54,152 @@ $black: #2a2c38;
     opacity: 0;
   }
 }
+
 .waves {
-  position: absolute;
-  background-color: $black;
+  z-index: -1;
   border-radius: 999px;
+  opacity: 0.3;
 
   span {
     position: absolute;
-
-    top: -4px;
-    bottom: -4px;
-    left: -4px;
-    right: -4px;
-    background: linear-gradient(180deg, #007af0 0%, #00f0b6 100%);
-    content: "";
-    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-radius: 999px;
+    padding: 2px;
+    background: linear-gradient(180deg, #007af0 0%, #00f0b6 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
   }
   span:nth-child(1) {
     transform: scale(1);
+    opacity: 0.06;
   }
   span:nth-child(2) {
-    transform: scale(1.02);
+    opacity: 0.16;
+    transform: scale(1.03) rotate(-60deg);
   }
   span:nth-child(3) {
-    transform: scale(1.04);
-  }
-  span:nth-child(4) {
+    opacity: 0.26;
     transform: scale(1.06);
   }
+  span:nth-child(4) {
+    opacity: 0.36;
+    transform: scale(1.09);
+  }
+  span:nth-child(5) {
+    opacity: 0.46;
+    transform: scale(1.12) rotate(-67.92deg);
+  }
+  span:nth-child(6) {
+    opacity: 0.56;
+    transform: scale(1.15);
+  }
+  span:nth-child(7) {
+    opacity: 0.66;
+    transform: scale(1.18);
+  }
+  span:nth-child(8) {
+    opacity: 0.76;
+    transform: scale(1.21) rotate(46.7deg);
+  }
+  span:nth-child(9) {
+    opacity: 0.86;
+    transform: scale(1.24);
+  }
+  span:nth-child(10) {
+    opacity: 0.96;
+    transform: scale(1.27) rotate(-73.14deg);
+  }
+  span:nth-child(11) {
+    opacity: 0.66;
+    transform: scale(1.3) rotate(51.46deg);
+  }
+  span:nth-child(12) {
+    opacity: 0.46;
+    transform: scale(1.33) rotate(89.16deg);
+  }
+  span:nth-child(13) {
+    opacity: 0.36;
+    transform: scale(1.36) rotate(-69.01deg);
+  }
+  span:nth-child(14) {
+    opacity: 0.26;
+    transform: scale(1.39) rotate(2.92deg);
+  }
+  span:nth-child(15) {
+    opacity: 0.16;
+    transform: scale(1.42);
+  }
+}
+
+.timeline {
+  .dot {
+    width: 1rem;
+    height: 1rem;
+    background-color: $neutral-tile-active;
+    border-radius: 999px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: 999px;
+    }
+    &::before {
+      width: 2rem;
+      height: 2rem;
+      left: -0.5rem;
+      top: -0.5rem;
+      border: 1px solid $neutral-tile-active;
+      opacity: 0.5;
+    }
+    &::after {
+      width: 3rem;
+      height: 3rem;
+      left: -1rem;
+      top: -1rem;
+      border: 1px solid $neutral-tile-active;
+      opacity: 0.2;
+    }
+  }
+  .line {
+    width: 1px;
+    height: 100%;
+    background-color: $neutral-tile-active;
+    opacity: 0.1;
+  }
+  .number {
+    font-family: "Manrope-Medium";
+    font-size: 96px;
+    line-height: 114px;
+    letter-spacing: -0.03em;
+    transform: translateX(-1rem);
+  }
+}
+
+.s-input {
+  background-color: transparent;
+  border-bottom: 1px solid $border-line;
+  display: block;
+  padding: 1rem 0;
+  font-size: 24px;
+  width: 100%;
+  font-family: "Inter-Regular";
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+  }
+  :placeholder {
+    color: $gray;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.footer {
+  display: grid;
 }

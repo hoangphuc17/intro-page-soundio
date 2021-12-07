@@ -18,6 +18,7 @@
     "autoprefixer": "^10.4.0",
     "live-server": "^1.2.1",
     "postcss-cli": "^9.0.2",
+    "sass": "^1.44.0",
     "tailwindcss": "^2.2.19"
   }
 }
