@@ -33,6 +33,13 @@ module.exports = {
           letterSpacing: "-0.03em",
         },
       ],
+      h3: [
+        "32px",
+        {
+          lineHeight: "40px",
+          letterSpacing: "-0.03em",
+        },
+      ],
       caption1: [
         "24px",
         {
@@ -44,6 +51,13 @@ module.exports = {
         "20px",
         {
           lineHeight: "32px",
+          letterSpacing: "-0.02em",
+        },
+      ],
+      caption3: [
+        "18px",
+        {
+          lineHeight: "28px",
           letterSpacing: "-0.02em",
         },
       ],

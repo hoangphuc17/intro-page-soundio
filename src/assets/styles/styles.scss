@@ -206,6 +206,8 @@ $border-line: #2b333b;
 
 .footer {
   display: grid;
+  padding: 4rem 1.5rem;
+  row-gap: 2rem;
   @media screen and (min-width: 1280px) {
     padding: 4rem 5rem;
     row-gap: 2rem;
