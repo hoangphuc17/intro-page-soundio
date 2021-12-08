@@ -231,3 +231,27 @@ $border-line: #2b333b;
     }
   }
 }
+
+// ANIMATIONS
+#sec1 {
+  #img-app-preview {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all ease-in-out 300ms;
+  }
+  #s1-b0 {
+    transition: all ease-in-out 300ms;
+    opacity: 0;
+    transform: scale(0) translate(-50%, -50%);
+  }
+  &.active {
+    #img-app-preview {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #s1-b0 {
+      opacity: 1;
+      transform: scale(1) translate(-50%, -50%);
+    }
+  }
+}
