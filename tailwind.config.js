@@ -1,6 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const Colors = {
-  "s-black": "#2A2C38",
+  "s-black": "#0f1113",
+  "s-black-2": "#252b31",
   "s-gray": "#87929d",
   "border-line": "#2b333b",
   primary: "#007af0",
@@ -49,6 +50,7 @@ module.exports = {
     }),
     extend: {
       fontFamily: {
+        "primary-bold": ["Inter-Bold", "sans-serif"],
         "primary-medium": ["Inter-Medium", "sans-serif"],
         "primary-regular": ["Inter-Regular", "sans-serif"],
         "primary-thin": ["Inter-Thin", "sans-serif"],

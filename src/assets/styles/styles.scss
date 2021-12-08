@@ -1,8 +1,12 @@
-$black: #2a2c38;
+$black: #0f1113;
 $neutral-tile-active: #fcfcfc;
 $gray: #87929d;
 $border-line: #2b333b;
 
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter/Inter-Bold.ttf");
+}
 @font-face {
   font-family: "Inter-Medium";
   src: url("../fonts/Inter/Inter-Medium.ttf");
@@ -202,4 +206,26 @@ $border-line: #2b333b;
 
 .footer {
   display: grid;
+  @media screen and (min-width: 1280px) {
+    padding: 4rem 5rem;
+    row-gap: 2rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    > *:nth-child(1) {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    > *:nth-child(2) {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    > *:nth-child(3) {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    > *:nth-child(4) {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
 }
