@@ -1775,6 +1775,21 @@ video {
     transform: var(--tw-transform);
   }
 
+  .xl\:translate-y-\[-375px\] {
+    --tw-translate-y: -375px;
+    transform: var(--tw-transform);
+  }
+
+  .xl\:translate-x-\[40px\] {
+    --tw-translate-x: 40px;
+    transform: var(--tw-transform);
+  }
+
+  .xl\:translate-x-\[50px\] {
+    --tw-translate-x: 50px;
+    transform: var(--tw-transform);
+  }
+
   .xl\:rotate-0 {
     --tw-rotate: 0deg;
     transform: var(--tw-transform);
