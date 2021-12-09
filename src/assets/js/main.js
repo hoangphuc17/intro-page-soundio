@@ -10,8 +10,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   new ScrollMagic.Scene({
     triggerElement: "#sec1",
     triggerHook: "onLeave",
-    duration: getDeviceWidth(device, 400, 600),
-    offset: getDeviceWidth(device, -110, -80),
+    duration: getDeviceWidth(device, 350, 600),
+    offset: getDeviceWidth(device, -90, -80),
   })
     .setClassToggle("#sec1", "active") // add class toggle
     // .addIndicators() // add indicators (requires plugin)
@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     .addTo(controller);
   new ScrollMagic.Scene({
     triggerElement: "#sec7",
-    duration: getDeviceWidth(device, 900, 1000),
+    duration: getDeviceWidth(device, 800, 1000),
   })
     .setClassToggle("#sec7", "active") // add class toggle
     // .addIndicators() // add indicators (requires plugin)

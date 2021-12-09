@@ -684,6 +684,10 @@ video {
   z-index: 2;
 }
 
+.z-\[3\] {
+  z-index: 3;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -755,6 +759,22 @@ video {
 
 .-ml-2 {
   margin-left: -0.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .inline-block {
@@ -1311,6 +1331,14 @@ video {
 
   .xl\:ml-4 {
     margin-left: 1rem;
+  }
+
+  .xl\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .xl\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .xl\:block {
