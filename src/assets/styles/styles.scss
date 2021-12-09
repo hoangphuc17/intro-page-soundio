@@ -447,8 +447,8 @@ $border-line: #2b333b;
   #s2-number,
   #s2-img {
     opacity: 0;
-    transform: translateY(2rem);
-    transition: all ease-in-out 500ms;
+    transform: translateY(5rem);
+    transition: opacity 200ms ease-in, all cubic-bezier(0, 0.45, 1, 0.07) 800ms;
   }
   &.active {
     #s2-text,
@@ -462,7 +462,7 @@ $border-line: #2b333b;
 #sec3 {
   #s3-text {
     opacity: 0;
-    transform: translateY(2rem);
+    transform: translateY(5rem);
   }
   #s3-headphone {
     opacity: 0;
@@ -522,8 +522,8 @@ $border-line: #2b333b;
   #s4-number,
   #s4-img {
     opacity: 0;
-    transform: translateY(3rem);
-    transition: all linear 500ms;
+    transform: translateY(5rem);
+    transition: opacity 200ms ease-in, all cubic-bezier(0, 0.45, 1, 0.07) 800ms;
   }
   &.active {
     #s4-text,
@@ -538,8 +538,7 @@ $border-line: #2b333b;
   #s5-text,
   #s5-number {
     opacity: 0;
-    transform: translateY(3rem);
-    transition: all linear 500ms;
+    transform: translateY(5rem);
   }
   #s5-producer1 {
     opacity: 0;
@@ -596,7 +595,7 @@ $border-line: #2b333b;
   #s6-bird {
     opacity: 0;
     right: -100%;
-    transition: all ease-in-out 700ms;
+    transition: all linear 800ms;
   }
   #s6-b1 {
     opacity: 0;
