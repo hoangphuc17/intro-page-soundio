@@ -8,7 +8,15 @@ const Colors = {
   "neutral-tile-active": "#fcfcfc",
   "neutral-body": "#C8CCD0",
 };
-console.log(process.env.NODE_ENV);
+const BlogColors = {
+  primary: "#007af0",
+  "neutral-bg": "#181f25",
+  "neutral-dark": "#292929",
+  "neutral-tile-active": "#fcfcfc",
+  mischka: "#a6adb4",
+  rhino: "#414850",
+  "black-pearl": "#14181b",
+};
 module.exports = {
   mode: "jit",
   purge: {
@@ -73,15 +81,19 @@ module.exports = {
       },
       colors: {
         ...Colors,
+        ...BlogColors,
       },
       borderColor: {
         ...Colors,
+        ...BlogColors,
       },
       textColor: {
         ...Colors,
+        ...BlogColors,
       },
       backgroundColor: {
         ...Colors,
+        ...BlogColors,
       },
       gridTemplateColumns: {
         "1fr-auto": "1fr auto",
