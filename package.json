@@ -6,8 +6,8 @@
   "scripts": {
     "build-tailwind-dev": "npx tailwindcss -i ./docs/assets/styles/tailwind.css -o ./docs/assets/styles/tailwind.min.css --watch",
     "build-tailwind": "npx tailwindcss -i ./docs/assets/styles/tailwind.css -o ./docs/assets/styles/tailwind.min.css",
-    "build-style-dev": "sass --watch docs/assets/styles/styles.scss docs/assets/styles/styles.min.css --style=compressed",
-    "build-css": "npm run build-tailwind && sass docs/assets/styles/styles.scss:docs/assets/styles/styles.min.css docs/assets/styles/tailwind.min.css:docs/assets/styles/tailwind.min.css --style=compressed",
+    "build-style-dev": "sass --watch docs/assets/styles/intro-page.scss docs/assets/styles/intro-page.min.css --style=compressed",
+    "build-css": "npm run build-tailwind && sass docs/assets/styles/intro-page.scss:docs/assets/styles/intro-page.min.css docs/assets/styles/tailwind.min.css:docs/assets/styles/tailwind.min.css --style=compressed",
     "build": "set NODE_ENV=production&&npm run build-css",
     "dev": "live-server src --port=8080"
   },
