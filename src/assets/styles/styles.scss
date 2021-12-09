@@ -2,6 +2,7 @@ $black: #0f1113;
 $neutral-tile-active: #fcfcfc;
 $gray: #87929d;
 $border-line: #2b333b;
+$primary: #007af0;
 
 @font-face {
   font-family: "Inter-Bold";
@@ -27,7 +28,9 @@ $border-line: #2b333b;
   font-family: "Manrope-Regular";
   src: url("../fonts/Manrope/Manrope-Regular.ttf");
 }
-
+svg:hover path {
+  fill: $primary;
+}
 .wrapper {
   max-width: 846px;
   margin-left: auto;
@@ -45,145 +48,167 @@ $border-line: #2b333b;
   }
 }
 
-@keyframes waves {
+@keyframes w1 {
   0%,
   100% {
     opacity: 0;
   }
-  20%,
+  1%,
   99% {
     opacity: var(--opacity);
   }
 }
-@keyframes w1 {
-  0%,
-  100% {
-    opacity: var(--opacity);
-  }
-}
 @keyframes w2 {
-  0% {
+  0%,
+  6.66%,
+  100% {
     opacity: 0;
   }
   6.67%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w3 {
-  0% {
+  0%,
+  13.33%,
+  100% {
     opacity: 0;
   }
   13.34%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w4 {
-  0% {
+  0%,
+  20%,
+  100% {
     opacity: 0;
   }
   20.01%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w5 {
-  0% {
+  0%,
+  26.67%,
+  100% {
     opacity: 0;
   }
   26.68%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w6 {
-  0% {
+  0%,
+  33.34%,
+  100% {
     opacity: 0;
   }
   33.35%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w7 {
-  0% {
+  0%,
+  40.01%,
+  100% {
     opacity: 0;
   }
   40.02%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w8 {
-  0% {
+  0%,
+  46.68%,
+  100% {
     opacity: 0;
   }
   46.69%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w9 {
-  0% {
+  0%,
+  53.35%,
+  100% {
     opacity: 0;
   }
   53.36%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w10 {
-  0% {
+  0%,
+  60.02%,
+  100% {
     opacity: 0;
   }
   60.03%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w11 {
-  0% {
+  0%,
+  66.69%,
+  100% {
     opacity: 0;
   }
   66.7%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w12 {
-  0% {
+  0%,
+  73.36%,
+  100% {
     opacity: 0;
   }
   73.37%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w13 {
-  0% {
+  0%,
+  80.03%,
+  100% {
     opacity: 0;
   }
   80.04%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w14 {
-  0% {
+  0%,
+  86.7%,
+  100% {
     opacity: 0;
   }
   86.71%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
 @keyframes w15 {
-  0% {
+  0%,
+  93.37%,
+  100% {
     opacity: 0;
   }
   93.38%,
-  100% {
+  99% {
     opacity: var(--opacity);
   }
 }
@@ -191,7 +216,6 @@ $border-line: #2b333b;
   z-index: -1;
   border-radius: 999px;
   opacity: 0.3;
-
   span {
     position: absolute;
     top: 0;
@@ -206,84 +230,86 @@ $border-line: #2b333b;
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     opacity: 0;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   span:nth-child(1) {
     --opacity: 0.06;
     transform: scale(1);
-    animation: w1 5s ease-in-out infinite;
+    animation-name: w1;
   }
   span:nth-child(2) {
     --opacity: 0.16;
     transform: scale(1.03) rotate(-60deg);
-    animation: w2 5s ease-in-out infinite backwards;
+    animation-name: w2;
   }
   span:nth-child(3) {
     --opacity: 0.26;
     transform: scale(1.06);
-    animation: w3 5s ease-in-out infinite backwards;
+    animation-name: w3;
   }
   span:nth-child(4) {
     --opacity: 0.36;
     transform: scale(1.09);
-    animation: w4 5s ease-in-out infinite backwards;
+    animation-name: w4;
   }
   span:nth-child(5) {
     --opacity: 0.46;
     transform: scale(1.12) rotate(-67.92deg);
-    animation: w5 5s ease-in-out infinite backwards;
+    animation-name: w5;
   }
   span:nth-child(6) {
     --opacity: 0.56;
     transform: scale(1.15);
-    animation: w5 6s ease-in-out infinite backwards;
+    animation-name: w6;
   }
   span:nth-child(7) {
     --opacity: 0.66;
     transform: scale(1.18);
-    animation: w7 5s ease-in-out infinite backwards;
+    animation-name: w7;
   }
   span:nth-child(8) {
     --opacity: 0.76;
     transform: scale(1.21) rotate(46.7deg);
-    animation: w8 5s ease-in-out infinite backwards;
+    animation-name: w8;
   }
   span:nth-child(9) {
     --opacity: 0.86;
     transform: scale(1.24);
-    animation: w9 5s ease-in-out infinite backwards;
+    animation-name: w9;
   }
   span:nth-child(10) {
     --opacity: 0.96;
     transform: scale(1.27) rotate(-73.14deg);
-    animation: w10 5s ease-in-out infinite backwards;
+    animation-name: w10;
   }
   span:nth-child(11) {
     --opacity: 0.66;
     transform: scale(1.3) rotate(51.46deg);
-    animation: w11 5s ease-in-out infinite backwards;
+    animation-name: w11;
   }
   span:nth-child(12) {
     --opacity: 0.46;
     transform: scale(1.33) rotate(89.16deg);
-    animation: w12 5s ease-in-out infinite backwards;
+    animation-name: w12;
   }
   span:nth-child(13) {
     --opacity: 0.36;
     transform: scale(1.36) rotate(-69.01deg);
-    animation: w13 5s ease-in-out infinite backwards;
+    animation-name: w13;
   }
   span:nth-child(14) {
     --opacity: 0.26;
     transform: scale(1.39) rotate(2.92deg);
-    animation: w14 5s ease-in-out infinite backwards;
+    animation-name: w14;
   }
   span:nth-child(15) {
     --opacity: 0.16;
     transform: scale(1.42);
-    animation: w15 5s ease-in-out infinite backwards;
+    animation-name: w15;
   }
 }
-
 .timeline {
   .dot {
     width: 1rem;
@@ -330,7 +356,6 @@ $border-line: #2b333b;
     margin-left: -1rem;
   }
 }
-
 .s-input {
   background-color: transparent;
   border-bottom: 1px solid $border-line;
@@ -347,7 +372,6 @@ $border-line: #2b333b;
     opacity: 1; /* Firefox */
   }
 }
-
 .footer {
   display: grid;
   padding: 4rem 1.5rem;
@@ -376,9 +400,6 @@ $border-line: #2b333b;
   }
 }
 // ANIMATIONS
-* {
-  transition: all linear 500ms;
-}
 #sec1 {
   #img-app-preview {
     opacity: 0;
@@ -584,7 +605,6 @@ $border-line: #2b333b;
     }
   }
 }
-
 #sec6 {
   #s6-text,
   #s6-number {
@@ -618,7 +638,6 @@ $border-line: #2b333b;
     }
   }
 }
-
 #sec7 {
   #s7-text,
   #s7-number {
