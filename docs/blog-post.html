@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog Post</title>
+  <meta name="description" content="Blog Post Page" />
+  <meta name="author" content="Phuc" />
+  <link rel="stylesheet" href="./assets/styles/tailwind.min.css" />
+  <link rel="stylesheet" href="./assets/styles/blog.min.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div class="bg-white wrapper sticky top-0 flex justify-between items-center py-5">
+    <div class="flex items-center">
+      <a href="/" class="inline-flex items-center">
+        <img src="./assets/images/logo-dark.svg" alt="" class="w-[102px] h-[30px]">
+        <span class="font-primary-regular text-sm ml-2">Blogs</span>
+      </a>
+      <form class="search-bar ml-6" action="">
+        <button type="submit">
+          <img src="./assets/images/icons/search.svg" alt="">
+        </button>
+        <input type="text" placeholder="Tìm kiếm" name="search">
+      </form>
+    </div>
+    <div class="flex items-center">
+      <a class="mx-4" href="http://" target="_blank" rel="noopener noreferrer">
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.15375 2.65589L7.64764 2.65655C6.46677 2.65655 6.23814 3.21772 6.23814 4.04128V5.85715H9.05448L9.05348 8.70143H6.23814V16H3.30059V8.70143H0.844727V5.85715H3.30059V3.75978C3.30059 1.32553 4.78757 0 6.9591 0L9.15391 0.00349174L9.15375 2.65589Z"
+            fill="#14181B" />
+        </svg>
+      </a>
+      <a class="mx-4" href="http://" target="_blank" rel="noopener noreferrer">
+
+        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.9814 2.03674C15.9584 2.0097 15.9206 2.00052 15.8883 2.01527C15.4099 2.22748 14.9067 2.38005 14.3884 2.47018C14.9386 2.05624 15.3487 1.48301 15.5589 0.825721C15.5691 0.794257 15.5586 0.759844 15.5329 0.73936C15.507 0.718876 15.4711 0.716254 15.4427 0.733133C14.823 1.1007 14.1517 1.35978 13.4468 1.5035C12.8221 0.855218 11.9498 0.484375 11.047 0.484375C9.21099 0.484375 7.71745 1.97791 7.71745 3.81377C7.71745 4.03582 7.73892 4.25573 7.78153 4.46926C5.23856 4.31227 2.86077 3.09142 1.24401 1.1084C1.22745 1.08808 1.20238 1.07677 1.17616 1.0794C1.15011 1.08136 1.12684 1.09611 1.11373 1.11856C0.818757 1.6246 0.662915 2.20356 0.662915 2.79252C0.662915 3.81328 1.12667 4.76767 1.91637 5.39743C1.50981 5.3486 1.11274 5.22061 0.754683 5.02183C0.730594 5.00823 0.700605 5.0084 0.676516 5.02233C0.652427 5.03609 0.637187 5.06166 0.636531 5.08951L0.636204 5.13212C0.636204 6.59812 1.60223 7.88534 2.97663 8.31272C2.61463 8.37106 2.23904 8.36712 1.86983 8.29666C1.84263 8.29158 1.81412 8.30092 1.79544 8.3219C1.77692 8.34287 1.77069 8.3722 1.77921 8.39875C2.19135 9.68515 3.33649 10.5873 4.66943 10.6997C3.55755 11.5143 2.2433 11.9435 0.854645 11.9435C0.598841 11.9435 0.341234 11.9282 0.0888702 11.8986C0.0528183 11.8945 0.0170941 11.9159 0.00463985 11.9505C-0.00781445 11.9854 0.00545921 12.0244 0.0365949 12.0443C1.5393 13.008 3.27684 13.5171 5.06157 13.5171C10.8995 13.5171 14.388 8.775 14.388 4.19051C14.388 4.06285 14.3856 3.93585 14.3805 3.80918C15.0103 3.34853 15.5509 2.78465 15.9868 2.13195C16.0063 2.10278 16.0041 2.06394 15.9814 2.03674Z"
+            fill="#14181B" />
+        </svg>
+      </a>
+      <a class="mx-4" href="http://" target="_blank" rel="noopener noreferrer">
+
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.92306 0.015625C0.860348 0.015625 0.000171932 0.877349 0 1.93765C0 2.99899 0.860176 3.86054 1.92323 3.86054C2.98337 3.86054 3.84474 2.99899 3.84474 1.93765C3.84474 0.877177 2.98319 0.015625 1.92306 0.015625Z"
+            fill="#14181B" />
+          <path d="M3.5807 5.32031H0.264648V15.9894H3.5807V5.32031Z" fill="#14181B" />
+          <path
+            d="M12.0225 5.05469C10.4094 5.05469 9.32781 5.93911 8.88509 6.77779H8.84073V5.31998H5.66033H5.66016V15.9889H8.97329V10.7109C8.97329 9.31946 9.23824 7.97169 10.9634 7.97169C12.6638 7.97169 12.6865 9.56309 12.6865 10.8001V15.9887H16.0002V10.1368C16.0002 7.26436 15.3803 5.05469 12.0225 5.05469Z"
+            fill="#14181B" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="wrapper mt-14 mb-14">
+    <div class="grid grid-cols-1fr-auto gap-x-16">
+      <div class="blog-post">
+        <h1 class="title">This is the blog post name. It shoud be used Heading 01</h1>
+        <div class="flex justify-between items-center">
+          <p class="post-by text-mischka text-sm mt-2">Posted by Ellie Ho on June 22, 2020</p>
+          <div class="flex items-center">
+            <a class="mx-2" href="http://" target="_blank" rel="noopener noreferrer">
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.15375 2.65589L7.64764 2.65655C6.46677 2.65655 6.23814 3.21772 6.23814 4.04128V5.85715H9.05448L9.05348 8.70143H6.23814V16H3.30059V8.70143H0.844727V5.85715H3.30059V3.75978C3.30059 1.32553 4.78757 0 6.9591 0L9.15391 0.00349174L9.15375 2.65589Z"
+                  fill="#14181B" />
+              </svg>
+            </a>
+            <a class="mx-2" href="http://" target="_blank" rel="noopener noreferrer">
+
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.9814 2.03674C15.9584 2.0097 15.9206 2.00052 15.8883 2.01527C15.4099 2.22748 14.9067 2.38005 14.3884 2.47018C14.9386 2.05624 15.3487 1.48301 15.5589 0.825721C15.5691 0.794257 15.5586 0.759844 15.5329 0.73936C15.507 0.718876 15.4711 0.716254 15.4427 0.733133C14.823 1.1007 14.1517 1.35978 13.4468 1.5035C12.8221 0.855218 11.9498 0.484375 11.047 0.484375C9.21099 0.484375 7.71745 1.97791 7.71745 3.81377C7.71745 4.03582 7.73892 4.25573 7.78153 4.46926C5.23856 4.31227 2.86077 3.09142 1.24401 1.1084C1.22745 1.08808 1.20238 1.07677 1.17616 1.0794C1.15011 1.08136 1.12684 1.09611 1.11373 1.11856C0.818757 1.6246 0.662915 2.20356 0.662915 2.79252C0.662915 3.81328 1.12667 4.76767 1.91637 5.39743C1.50981 5.3486 1.11274 5.22061 0.754683 5.02183C0.730594 5.00823 0.700605 5.0084 0.676516 5.02233C0.652427 5.03609 0.637187 5.06166 0.636531 5.08951L0.636204 5.13212C0.636204 6.59812 1.60223 7.88534 2.97663 8.31272C2.61463 8.37106 2.23904 8.36712 1.86983 8.29666C1.84263 8.29158 1.81412 8.30092 1.79544 8.3219C1.77692 8.34287 1.77069 8.3722 1.77921 8.39875C2.19135 9.68515 3.33649 10.5873 4.66943 10.6997C3.55755 11.5143 2.2433 11.9435 0.854645 11.9435C0.598841 11.9435 0.341234 11.9282 0.0888702 11.8986C0.0528183 11.8945 0.0170941 11.9159 0.00463985 11.9505C-0.00781445 11.9854 0.00545921 12.0244 0.0365949 12.0443C1.5393 13.008 3.27684 13.5171 5.06157 13.5171C10.8995 13.5171 14.388 8.775 14.388 4.19051C14.388 4.06285 14.3856 3.93585 14.3805 3.80918C15.0103 3.34853 15.5509 2.78465 15.9868 2.13195C16.0063 2.10278 16.0041 2.06394 15.9814 2.03674Z"
+                  fill="#14181B" />
+              </svg>
+            </a>
+            <a class="mx-2" href="http://" target="_blank" rel="noopener noreferrer">
+
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.92306 0.015625C0.860348 0.015625 0.000171932 0.877349 0 1.93765C0 2.99899 0.860176 3.86054 1.92323 3.86054C2.98337 3.86054 3.84474 2.99899 3.84474 1.93765C3.84474 0.877177 2.98319 0.015625 1.92306 0.015625Z"
+                  fill="#14181B" />
+                <path d="M3.5807 5.32031H0.264648V15.9894H3.5807V5.32031Z" fill="#14181B" />
+                <path
+                  d="M12.0225 5.05469C10.4094 5.05469 9.32781 5.93911 8.88509 6.77779H8.84073V5.31998H5.66033H5.66016V15.9889H8.97329V10.7109C8.97329 9.31946 9.23824 7.97169 10.9634 7.97169C12.6638 7.97169 12.6865 9.56309 12.6865 10.8001V15.9887H16.0002V10.1368C16.0002 7.26436 15.3803 5.05469 12.0225 5.05469Z"
+                  fill="#14181B" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+        <img src="./assets/images/thumbnail.png" alt="" class="thumbnail mt-10 w-full">
+        <div class="content mt-10 pb-12 border-b border-mischka">
+          <p>By default, Shopify merchants have only one option for product filter, which is filter by tag. To add
+            insult to injury, no filter automatically appears on the search result page. If you want to add one and
+            facilitate your customer experience, you will need to deal with a bunch of code. Such technical pain!
+            So, will you let the standard yet hazardous site search and product filter of Shopify lure your potential
+            customers away?
+            No, you never should do it. An investigation of 21 cyberspace stores conducted suggested that web visitors
+            who do a search accounted for 13.8% of the online sales. That said, there is a lot of room for your store
+            bloom by upgrading your Shopify site search and product filter.</p>
+          <h2>An overview Shopify Site Search and Product Filter (Heading 02)</h2>
+          <img src="./assets/images/img.png" alt="">
+          <p>To achieve such incredible success, the top Shopify sites must share something in common. They spend $200
+            to $600 a month on eCommerce site search and filtering solutions. Even though you can’t spend that much, you
+            can still learn some best practices that the big brands apply to facilitate user experience. Those small yet
+            powerful functions are totally worth your attention.
+            In today’s blog, I examine how 5 prestigious Shopify eCommerce stores set up their search and filter. I also
+            consult with our experts to give you the top secrets for online store search engine optimization. But first,
+            let’s see how it works by default.</p>
+        </div>
+        <div class="author mt-12">
+          <div class="">
+            <img src="./assets/images/author2.png" alt="" class="author-avatar">
+          </div>
+          <div class="">
+            <p class="author-name">Oliver Martins</p>
+            <div class="flex items-center text-rhino text-sm">
+              <p class="">Short and fun description about the member</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[330px]">
+        <p class="font-primary-bold text-xl mb-5">Table of Contents</p>
+        <a href="" class="block text-rhino text-sm">1. An overview Shopify Site Search and
+          Product Filter</a>
+        <a href="" class="block text-rhino text-sm border-t border-mischka mt-5 pt-5">2. An overview Shopify Site Search
+          and
+          Product Filter</a>
+        <a href="" class="block text-rhino text-sm border-t border-mischka mt-5 pt-5">3. An overview Shopify Site Search
+          and
+          Product Filter</a>
+        <div class="mt-6">
+          <p class="font-primary-regular text-sm">Share this Article</p>
+          <div class="flex items-center mt-2">
+            <a class="mr-4" href="http://" target="_blank" rel="noopener noreferrer">
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.15375 2.65589L7.64764 2.65655C6.46677 2.65655 6.23814 3.21772 6.23814 4.04128V5.85715H9.05448L9.05348 8.70143H6.23814V16H3.30059V8.70143H0.844727V5.85715H3.30059V3.75978C3.30059 1.32553 4.78757 0 6.9591 0L9.15391 0.00349174L9.15375 2.65589Z"
+                  fill="#14181B" />
+              </svg>
+            </a>
+            <a class="mr-4" href="http://" target="_blank" rel="noopener noreferrer">
+
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.9814 2.03674C15.9584 2.0097 15.9206 2.00052 15.8883 2.01527C15.4099 2.22748 14.9067 2.38005 14.3884 2.47018C14.9386 2.05624 15.3487 1.48301 15.5589 0.825721C15.5691 0.794257 15.5586 0.759844 15.5329 0.73936C15.507 0.718876 15.4711 0.716254 15.4427 0.733133C14.823 1.1007 14.1517 1.35978 13.4468 1.5035C12.8221 0.855218 11.9498 0.484375 11.047 0.484375C9.21099 0.484375 7.71745 1.97791 7.71745 3.81377C7.71745 4.03582 7.73892 4.25573 7.78153 4.46926C5.23856 4.31227 2.86077 3.09142 1.24401 1.1084C1.22745 1.08808 1.20238 1.07677 1.17616 1.0794C1.15011 1.08136 1.12684 1.09611 1.11373 1.11856C0.818757 1.6246 0.662915 2.20356 0.662915 2.79252C0.662915 3.81328 1.12667 4.76767 1.91637 5.39743C1.50981 5.3486 1.11274 5.22061 0.754683 5.02183C0.730594 5.00823 0.700605 5.0084 0.676516 5.02233C0.652427 5.03609 0.637187 5.06166 0.636531 5.08951L0.636204 5.13212C0.636204 6.59812 1.60223 7.88534 2.97663 8.31272C2.61463 8.37106 2.23904 8.36712 1.86983 8.29666C1.84263 8.29158 1.81412 8.30092 1.79544 8.3219C1.77692 8.34287 1.77069 8.3722 1.77921 8.39875C2.19135 9.68515 3.33649 10.5873 4.66943 10.6997C3.55755 11.5143 2.2433 11.9435 0.854645 11.9435C0.598841 11.9435 0.341234 11.9282 0.0888702 11.8986C0.0528183 11.8945 0.0170941 11.9159 0.00463985 11.9505C-0.00781445 11.9854 0.00545921 12.0244 0.0365949 12.0443C1.5393 13.008 3.27684 13.5171 5.06157 13.5171C10.8995 13.5171 14.388 8.775 14.388 4.19051C14.388 4.06285 14.3856 3.93585 14.3805 3.80918C15.0103 3.34853 15.5509 2.78465 15.9868 2.13195C16.0063 2.10278 16.0041 2.06394 15.9814 2.03674Z"
+                  fill="#14181B" />
+              </svg>
+            </a>
+            <a class="" href="http://" target="_blank" rel="noopener noreferrer">
+
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.92306 0.015625C0.860348 0.015625 0.000171932 0.877349 0 1.93765C0 2.99899 0.860176 3.86054 1.92323 3.86054C2.98337 3.86054 3.84474 2.99899 3.84474 1.93765C3.84474 0.877177 2.98319 0.015625 1.92306 0.015625Z"
+                  fill="#14181B" />
+                <path d="M3.5807 5.32031H0.264648V15.9894H3.5807V5.32031Z" fill="#14181B" />
+                <path
+                  d="M12.0225 5.05469C10.4094 5.05469 9.32781 5.93911 8.88509 6.77779H8.84073V5.31998H5.66033H5.66016V15.9889H8.97329V10.7109C8.97329 9.31946 9.23824 7.97169 10.9634 7.97169C12.6638 7.97169 12.6865 9.56309 12.6865 10.8001V15.9887H16.0002V10.1368C16.0002 7.26436 15.3803 5.05469 12.0225 5.05469Z"
+                  fill="#14181B" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- FOOTER -->
+  <div class="bg-black-chinese">
+    <div class="footer wrapper">
+      <div class="flex items-center flex-col xl:flex-row">
+        <img src="./assets/images/logo.svg" alt="logo" class="mx-auto xl:mx-0">
+        <div class="xl:ml-16 flex flex-col xl:flex-row mt-6 xl:mt-0 text-center xl:text-left">
+          <a href="" class="font-primary-bold text-sm uppercase mx-8 my-4 xl:my-0 hover:text-primary">Blog</a>
+          <a href="" class="font-primary-bold text-sm uppercase mx-8 my-4 xl:my-0 hover:text-primary">Hỗ trợ</a>
+          <a href="" class="font-primary-bold text-sm uppercase mx-8 my-4 xl:my-0 hover:text-primary">Liên hệ</a>
+        </div>
+      </div>
+      <div class="flex justify-center xl:justify-start">
+        <a href="" class="text-s-gray hover:text-primary transition-colors font-primary-regular mr-6 xl:mr-10">Điều
+          khoản</a>
+        <a href="" class="text-s-gray hover:text-primary transition-colors font-primary-regular">Chính sách</a>
+      </div>
+      <div class="flex flex-col xl:flex-row xl:justify-end items-center">
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          class="rounded-full bg-s-black-2 hover:bg-primary transition-colors py-3 px-12 w-full xl:w-auto flex justify-center">
+          <img src="./assets/images/google-store.png" alt="android store" class="w-[96px] h-[24px]">
+        </a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          class="rounded-full bg-s-black-2 hover:bg-primary transition-colors py-3 px-12 xl:ml-4 mt-2 xl:mt-0 w-full xl:w-auto flex justify-center">
+          <img src="./assets/images/apple-store.png" alt="apple store" class="w-[96px] h-[24px]">
+        </a>
+        <div class="flex xl:ml-4 mt-2 xl:mt-0">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            class="w-14 h-14 bg-s-black-2 hover:bg-primary transition-colors flex justify-center items-center mx-2 rounded-full">
+            <img src="./assets/images/icons/facebook.svg" alt="">
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            class="w-14 h-14 bg-s-black-2 hover:bg-primary transition-colors flex justify-center items-center mx-2 rounded-full">
+            <img src="./assets/images/icons/instagram.svg" alt="">
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            class="w-14 h-14 bg-s-black-2 hover:bg-primary transition-colors flex justify-center items-center mx-2 rounded-full">
+            <img src="./assets/images/icons/youtube.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+      <div class="">
+        <p class="text-s-gray text-center xl:text-right">© 2021 Soundio</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

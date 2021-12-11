@@ -3,15 +3,20 @@ function getDeviceWidth(device, mobileWidth, desktopWidth) {
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
+  setTimeout(() => {
+    var sec1 = document.getElementById("sec1");
+    if (!sec1.classList.contains("active")) {
+      sec1.classList.add("active");
+    }
+  }, 1000);
   var deviceWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
   var device = deviceWidth < 1280 ? "mobile" : "desktop";
   var controller = new ScrollMagic.Controller({});
-
   new ScrollMagic.Scene({
     triggerElement: "#sec1",
     triggerHook: "onLeave",
     duration: getDeviceWidth(device, 350, 600),
-    offset: getDeviceWidth(device, -90, -80),
+    offset: getDeviceWidth(device, -100, -100),
   })
     .setClassToggle("#sec1", "active") // add class toggle
     // .addIndicators() // add indicators (requires plugin)

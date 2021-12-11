@@ -16,6 +16,7 @@ const BlogColors = {
   mischka: "#a6adb4",
   rhino: "#414850",
   "black-pearl": "#14181b",
+  "black-chinese": "#0f1113",
 };
 module.exports = {
   mode: "jit",
