@@ -15,10 +15,10 @@
 
 <body>
   <!-- HEADER -->
-  <div class="bg-white wrapper sticky top-0 flex justify-between items-center py-5">
+  <div class="bg-white wrapper sticky z-10 top-0 flex justify-between items-center py-4 xl:py-5 px-6 xl:px-0">
     <div class="flex items-center">
       <a href="/" class="inline-flex items-center">
-        <img src="./assets/images/logo-dark.svg" alt="" class="w-[102px] h-[30px]">
+        <img src="./assets/images/logo-dark.svg" alt="" class="w-[68px] h-[20px] xl:w-[102px] xl:h-[30px]">
         <span class="font-primary-regular text-sm ml-2">Blogs</span>
       </a>
       <form class="search-bar ml-6" action="">
@@ -29,14 +29,22 @@
       </form>
     </div>
     <div class="flex items-center">
-      <a class="mx-4" href="http://" target="_blank" rel="noopener noreferrer">
+      <span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.4733 12.5276L10.9999 10.0742C11.96 8.87719 12.4249 7.35778 12.2991 5.82845C12.1733 4.29911 11.4664 2.8761 10.3236 1.85201C9.18085 0.827917 7.68914 0.280586 6.15522 0.32256C4.6213 0.364533 3.16175 0.992621 2.0767 2.07767C0.991644 3.16273 0.363557 4.62227 0.321583 6.15619C0.27961 7.69012 0.82694 9.18183 1.85103 10.3246C2.87512 11.4674 4.29814 12.1743 5.82747 12.3001C7.3568 12.4259 8.87621 11.961 10.0733 11.0009L12.5266 13.4542C12.5886 13.5167 12.6623 13.5663 12.7436 13.6002C12.8248 13.634 12.9119 13.6514 12.9999 13.6514C13.0879 13.6514 13.1751 13.634 13.2563 13.6002C13.3376 13.5663 13.4113 13.5167 13.4733 13.4542C13.5934 13.3299 13.6606 13.1638 13.6606 12.9909C13.6606 12.818 13.5934 12.6519 13.4733 12.5276ZM6.33327 11.0009C5.41029 11.0009 4.50804 10.7272 3.74061 10.2144C2.97318 9.70166 2.37504 8.97283 2.02183 8.1201C1.66862 7.26738 1.57621 6.32907 1.75627 5.42383C1.93634 4.51858 2.38079 3.68706 3.03344 3.03441C3.68608 2.38177 4.5176 1.93731 5.42285 1.75725C6.32809 1.57718 7.2664 1.6696 8.11913 2.02281C8.97185 2.37602 9.70068 2.97416 10.2135 3.74159C10.7262 4.50901 10.9999 5.41127 10.9999 6.33425C10.9999 7.57192 10.5083 8.75891 9.6331 9.63408C8.75793 10.5092 7.57095 11.0009 6.33327 11.0009Z"
+            fill="#14181B" />
+        </svg>
+
+      </span>
+      <a class="ml-4" href="http://" target="_blank" rel="noopener noreferrer">
         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M9.15375 2.65589L7.64764 2.65655C6.46677 2.65655 6.23814 3.21772 6.23814 4.04128V5.85715H9.05448L9.05348 8.70143H6.23814V16H3.30059V8.70143H0.844727V5.85715H3.30059V3.75978C3.30059 1.32553 4.78757 0 6.9591 0L9.15391 0.00349174L9.15375 2.65589Z"
             fill="#14181B" />
         </svg>
       </a>
-      <a class="mx-4" href="http://" target="_blank" rel="noopener noreferrer">
+      <a class="ml-4" href="http://" target="_blank" rel="noopener noreferrer">
 
         <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -44,7 +52,7 @@
             fill="#14181B" />
         </svg>
       </a>
-      <a class="mx-4" href="http://" target="_blank" rel="noopener noreferrer">
+      <a class="ml-4" href="http://" target="_blank" rel="noopener noreferrer">
 
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -59,21 +67,21 @@
     </div>
   </div>
 
-  <div class="wrapper mt-14 mb-14">
-    <div class="grid grid-cols-1fr-auto gap-x-16">
+  <div class="wrapper mt-14 mb-14 px-6 xl:px-0">
+    <div class="grid xl:grid-cols-1fr-auto xl:gap-x-16">
       <div class="blog-post">
         <h1 class="title">This is the blog post name. It shoud be used Heading 01</h1>
-        <div class="flex justify-between items-center">
+        <div class="flex xl:justify-between xl:items-center flex-col xl:flex-row">
           <p class="post-by text-mischka text-sm mt-2">Posted by Ellie Ho on June 22, 2020</p>
-          <div class="flex items-center">
-            <a class="mx-2" href="http://" target="_blank" rel="noopener noreferrer">
+          <div class="flex items-center mt-4 xl:mt-0">
+            <a class="" href="http://" target="_blank" rel="noopener noreferrer">
               <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.15375 2.65589L7.64764 2.65655C6.46677 2.65655 6.23814 3.21772 6.23814 4.04128V5.85715H9.05448L9.05348 8.70143H6.23814V16H3.30059V8.70143H0.844727V5.85715H3.30059V3.75978C3.30059 1.32553 4.78757 0 6.9591 0L9.15391 0.00349174L9.15375 2.65589Z"
                   fill="#14181B" />
               </svg>
             </a>
-            <a class="mx-2" href="http://" target="_blank" rel="noopener noreferrer">
+            <a class="ml-4" href="http://" target="_blank" rel="noopener noreferrer">
 
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -81,7 +89,7 @@
                   fill="#14181B" />
               </svg>
             </a>
-            <a class="mx-2" href="http://" target="_blank" rel="noopener noreferrer">
+            <a class="ml-4" href="http://" target="_blank" rel="noopener noreferrer">
 
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -96,7 +104,7 @@
           </div>
 
         </div>
-        <img src="./assets/images/thumbnail.png" alt="" class="thumbnail mt-10 w-full">
+        <img src="./assets/images/thumbnail.png" alt="" class="thumbnail mt-8 xl:mt-10 w-full">
         <div class="content mt-10 pb-12 border-b border-mischka">
           <p>By default, Shopify merchants have only one option for product filter, which is filter by tag. To add
             insult to injury, no filter automatically appears on the search result page. If you want to add one and
@@ -128,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="w-[330px]">
+      <div class="w-[330px] hidden xl:block">
         <p class="font-primary-bold text-xl mb-5">Table of Contents</p>
         <a href="" class="block text-rhino text-sm">1. An overview Shopify Site Search and
           Product Filter</a>

@@ -10,6 +10,7 @@ const Colors = {
 };
 const BlogColors = {
   primary: "#007af0",
+  "neutral-bg-grey": "#fbfbfc",
   "neutral-bg": "#181f25",
   "neutral-dark": "#292929",
   "neutral-tile-active": "#fcfcfc",

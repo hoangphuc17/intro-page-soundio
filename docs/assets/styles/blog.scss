@@ -44,12 +44,12 @@ svg:hover path {
   margin-right: auto;
 }
 .search-bar {
+  display: none;
   background-color: #f1f1f2;
   padding: 8px 16px;
   border-radius: 999px;
   font-size: 14px;
   font-family: "Inter-Regular";
-  display: flex;
   align-items: center;
   input {
     margin-left: 12px;
@@ -57,13 +57,19 @@ svg:hover path {
     outline: none;
     color: $mischka;
   }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
 }
 .breadcrumb-category {
   box-shadow: 0px 1px 0px rgba(93, 94, 98, 0.1);
+  & > *::-webkit-scrollbar {
+    display: none;
+  }
   a {
     color: $neutral-bg;
     font-family: "Inter-Bold";
-    margin-right: 64px;
+    font-size: 14px;
     &:hover {
       color: $primary;
     }
@@ -76,8 +82,17 @@ svg:hover path {
         height: 2px;
         width: 100%;
         background-color: $primary;
-        bottom: -20px;
+        bottom: -12px;
+        @media screen and (min-width: 1280px) {
+          bottom: -20px;
+        }
       }
+    }
+    &:not(:last-child) {
+      margin-right: 64px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
     }
   }
 }
@@ -104,7 +119,7 @@ svg:hover path {
   .title {
     font-family: "Inter-Bold";
     margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     &:hover {
       color: $primary;
     }
@@ -126,16 +141,16 @@ svg:hover path {
   .description {
     color: $rhino;
     font-size: 14px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
   &.horizontal {
     display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 2rem;
+    grid-template-columns: auto;
+    row-gap: 1rem;
     .title {
-      font-size: 32px;
-      line-height: 40px;
-      letter-spacing: -0.03em;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.01em;
     }
   }
   &.vertical {
@@ -155,6 +170,23 @@ svg:hover path {
       letter-spacing: -0.01em;
     }
   }
+  @media screen and (min-width: 1280px) {
+    .title {
+      margin-bottom: 1.5rem;
+    }
+    .description {
+      margin-top: 1.5rem;
+    }
+    &.horizontal {
+      grid-template-columns: auto 1fr;
+      column-gap: 2rem;
+      .title {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.03em;
+      }
+    }
+  }
 }
 .dot {
   width: 4px;
@@ -165,13 +197,13 @@ svg:hover path {
 .blog-post {
   .title {
     font-family: "Inter-Bold";
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -0.03em;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
   }
   .content {
     & > * {
-      margin-top: 2.5rem;
+      margin-top: 1.5rem;
     }
     p {
       font-family: "Inter-Regular";
@@ -203,6 +235,18 @@ svg:hover path {
       font-family: "Inter-Bold";
       font-size: 20px;
       line-height: 28px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .title {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.03em;
+    }
+    .content {
+      & > * {
+        margin-top: 2.5rem;
+      }
     }
   }
 }
