@@ -65,4 +65,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
     .setClassToggle("#sec8", "active") // add class toggle
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
+
+  var menuButton = document.getElementById("menu-button");
+  menuButton.addEventListener("click", () => {
+    var menu = document.getElementById("menu");
+    if (menu.classList.contains("active")) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+    menu.classList.toggle("active");
+    var overlay = document.getElementById("overlay");
+    overlay.classList.toggle("active");
+  });
 });

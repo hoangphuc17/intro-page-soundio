@@ -19,22 +19,30 @@
 <body class="bg-s-black text-white font-primary-medium relative overflow-x-hidden">
   <div class="mx-auto max-w-[1440px] relative">
     <!-- HEADER -->
-    <div class="fixed z-[3] top-6 xl:top-16 left-1/2 -translate-x-1/2 w-full xl:w-[1440px]">
+    <div id="overlay"></div>
+    <div class="fixed z-[3] top-5 xl:top-16 left-1/2 -translate-x-1/2 w-full xl:w-[1440px]">
       <div class="flex justify-between items-start px-6 xl:px-20">
         <div></div>
         <div class="">
           <div class="xl:hidden">
-            <img src="./assets/images/icons/menu.svg" alt="">
+            <div id="menu-button" class="ml-auto">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-          <div class="hidden xl:block text-right">
+          <div id="menu" class="text-right mt-6 xl:mt-0">
             <a href="http://"
-              class="font-primary-medium uppercase text-xs inline-block hover:text-primary transition-colors">Tải
+              class="font-primary-medium uppercase text-2xl xl:text-xs inline-block hover:text-primary transition-colors">Blog</a><br />
+            <a href="http://"
+              class="font-primary-medium uppercase text-2xl xl:text-xs inline-block hover:text-primary transition-colors mt-6">Tải
               App</a><br />
             <a href="http://"
-              class="font-primary-medium uppercase text-xs inline-block hover:text-primary transition-colors mt-6">Đăng
+              class="font-primary-medium uppercase text-2xl xl:text-xs inline-block hover:text-primary transition-colors mt-6">Đăng
               nhập</a><br />
             <a href="http://"
-              class="font-primary-medium uppercase text-xs inline-block hover:text-primary transition-colors mt-6">Đăng
+              class="font-primary-medium uppercase text-2xl xl:text-xs inline-block hover:text-primary transition-colors mt-6">Đăng
               ký - miễn phí</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">
 
