@@ -643,8 +643,8 @@ video {
   top: 2.5rem;
 }
 
-.top-6 {
-  top: 1.5rem;
+.top-5 {
+  top: 1.25rem;
 }
 
 .left-1\/2 {
@@ -685,10 +685,6 @@ video {
 
 .top-full {
   top: 100%;
-}
-
-.top-5 {
-  top: 1.25rem;
 }
 
 .z-10 {
@@ -979,6 +975,14 @@ video {
 
 .w-\[248px\] {
   width: 248px;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .max-w-\[1440px\] {
@@ -1320,6 +1324,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-h2 {
   font-size: 48px;
   line-height: 56px;
@@ -1346,11 +1355,6 @@ video {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: -0.02em;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .uppercase {
@@ -1488,6 +1492,14 @@ video {
 
   .xl\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .xl\:ml-auto {
+    margin-left: auto;
+  }
+
+  .xl\:mr-0 {
+    margin-right: 0px;
   }
 
   .xl\:block {
@@ -1677,6 +1689,10 @@ video {
     flex-direction: row;
   }
 
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
   .xl\:items-center {
     align-items: center;
   }
@@ -1765,6 +1781,11 @@ video {
     text-align: right;
   }
 
+  .xl\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .xl\:text-h1 {
     font-size: 80px;
     line-height: 88px;
@@ -1787,10 +1808,5 @@ video {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.02em;
-  }
-
-  .xl\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
