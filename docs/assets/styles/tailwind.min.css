@@ -711,6 +711,10 @@ video {
   z-index: 2;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -765,12 +769,12 @@ video {
   margin-top: 2.5rem;
 }
 
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .mt-14 {
@@ -925,6 +929,10 @@ video {
   width: 3.5rem;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -975,14 +983,6 @@ video {
 
 .w-\[248px\] {
   width: 248px;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .max-w-\[1440px\] {
@@ -1126,6 +1126,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1444,6 +1448,10 @@ video {
     bottom: -11rem;
   }
 
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .xl\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1474,12 +1482,20 @@ video {
     margin-top: 0px;
   }
 
+  .xl\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .xl\:mr-10 {
     margin-right: 2.5rem;
   }
 
-  .xl\:ml-4 {
-    margin-left: 1rem;
+  .xl\:ml-auto {
+    margin-left: auto;
+  }
+
+  .xl\:mr-0 {
+    margin-right: 0px;
   }
 
   .xl\:mt-10 {
@@ -1494,12 +1510,8 @@ video {
     margin-bottom: 2rem;
   }
 
-  .xl\:ml-auto {
-    margin-left: auto;
-  }
-
-  .xl\:mr-0 {
-    margin-right: 0px;
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .xl\:block {
@@ -1695,10 +1707,6 @@ video {
 
   .xl\:items-center {
     align-items: center;
-  }
-
-  .xl\:justify-start {
-    justify-content: flex-start;
   }
 
   .xl\:justify-end {
