@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     .addTo(controller);
   new ScrollMagic.Scene({
     triggerElement: "#sec8",
-    duration: getDeviceWidth(device, 1200, 500),
+    duration: getDeviceWidth(device, 1200, 1000),
   })
     .setClassToggle("#sec8", "active") // add class toggle
     // .addIndicators() // add indicators (requires plugin)
